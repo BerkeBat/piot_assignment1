@@ -1,4 +1,5 @@
 from sense_hat import SenseHat
+from time import sleep
 import json
 sense = SenseHat()
 
@@ -18,12 +19,13 @@ h_min = cfg_dict['hot_min']
 
 while True:
     t = sense.get_temperature()
-    if t <= c_max:
+    if t < c_max:
         c = b
-    elif t >= cm_min or t <= cm_max:
+    elif t > cm_min and t < cm_max:
         c = g
     elif t > h_min:
         c = r
-    sense.show_message(str(t),text_colour=c)
+    sense.clear(c)
+    sleep(10)
 
 
