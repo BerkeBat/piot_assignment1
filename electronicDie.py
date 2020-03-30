@@ -5,9 +5,6 @@ import dieFaces
 
 sense = SenseHat()
 
-def getRandomDieNum():
-    return random.randint(1, 6)
-
 def numToFace(dieNum):
     face = []
     if dieNum == 1:

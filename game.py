@@ -5,7 +5,7 @@ import time
 
 sense = SenseHat()
 
-WINNING_SCORE = 4
+WINNING_SCORE = 30
 SCROLL_SPEED = 0.07
 
 def checkForWinner(scoreP1, scoreP2):
