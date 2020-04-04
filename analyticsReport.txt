@@ -1,0 +1,11 @@
+Task A
+-------
+For Task A we decided to 3 simple emojis, a smiley face, a sad face and a tree.
+
+Task B
+-------
+For Task B we were considering storing the read-in values in a list or array but finally decided on seperate variables to make the code more readable.
+
+Task C
+-------
+To keep the code as readable and clear as possible a lot of functions and modules were used when implementing Task C. First off, the arrays holding the images of the diefaces were seperated into the file dieFaces.py. A force of greater than 2 on any of the axis was chosen to make sure the players didn't accidentally shake the die while handing it to the other player. The random number for the die was generated using the python random module, and the face was selected using the numToDie(dieNum) function, which took the faces from the above mentioned dieFaces.py. The game operates in a simple while loop that continues as long as there is not a winner. After every time a player shakes the die, to make sure the other player doesn't do a useless roll when someone has already reached the winning threshhold. The method that checks for a winner concludes the game by changing a boolean value that breaks the value, showing the winner on the sense hat and finally writing the score and time to a .csv.
